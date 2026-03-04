@@ -1,0 +1,35 @@
+# TeamTaskManager
+
+A C# ASP.NET Core Web API for managing tasks and team members.  
+Supports task CRUD, multiple assignees, filtering, search, sorting, pagination, and input validation.
+
+
+## Running the API
+
+```bash
+git clone https://github.com/Maite-0/TeamTaskManager.git
+cd TeamTaskManager
+dotnet restore
+dotnet build
+dotnet run --project src/TeamTaskManager
+
+## Seeded Data
+On startup, the API seeds:
+- 3 team members
+- 4 tasks with realistic titles and priorities
+- Some tasks already assigned to team members
+
+## Features
+- CRUD operations for tasks and team members
+- Assign tasks to multiple team members
+- Filter, sort, and search tasks
+- Pagination support
+- Input validation with Data Annotations
+- Global exception handling middleware
+- Unit tests for controller logic
+
+## Testing
+- Use Swagger at https://localhost:7215/swagger
+- Example POST request: /api/tasks/{id}/assig
+- GET /api/tasks?status=Todo&priority=High&search=API
+- GET /api/tasks?sortBy=priority&descending=true&pageNumber=1&pageSize=5

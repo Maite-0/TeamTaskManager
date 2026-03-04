@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="TeamTaskManager.Api/TeamTaskManager.Api.csproj" />
+  <Project Path="TeamTaskManager.Tests/TeamTaskManager.Tests.csproj" Id="bae8980d-eb5b-43bf-b96e-8501b9eaede9" />
+</Solution>
